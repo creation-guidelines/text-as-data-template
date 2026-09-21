@@ -56,3 +56,4 @@ Rename a field across all lines: `mlr -I --ijsonl --ojsonl rename old,new data/<
 - `.tad/tools/dc.py check` exists because DuckDB's `COPY FROM json` silently drops unknown keys and NULL-fills missing nullable columns.
 - `.tad/tools/render.py` is schema-agnostic by detecting shapes (a relation table, a sources table) structurally, not by name, so it works on a fresh schema with no configuration.
 - Findings and measurements behind these rules were made on a first content repo, [`creation-guidelines/software-engineering-canon`](https://github.com/creation-guidelines/software-engineering-canon), which this template was extracted from.
+typo fix
