@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/creation-guidelines/text-as-data-template/compare/v1.0.0...v1.1.0) (2026-09-21)
+
+
+### Features
+
+* **data:** add a third example concept ([#6](https://github.com/creation-guidelines/text-as-data-template/issues/6)) ([ecb7e80](https://github.com/creation-guidelines/text-as-data-template/commit/ecb7e80cd9677ccf0dd989930b8c26acb83f24b9))
+
 ## 1.0.0 (2026-09-21)
 
 
