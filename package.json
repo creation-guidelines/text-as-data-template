@@ -1,0 +1,9 @@
+{
+  "name": "text-as-data-template",
+  "private": true,
+  "description": "Commit-linting config only; this repo's content is data + SQL, not JS.",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0"
+  }
+}
