@@ -25,3 +25,10 @@
 **Relations:**
 
 - → **pairs-with** [EXAMPLE: one](concepts.md#example-one) — shown as a relation on both pages
+
+<a id="example-three"></a>
+### EXAMPLE: three
+
+**Statement:** A third row, added to test a minor release.
+
+**Tags:** demo
