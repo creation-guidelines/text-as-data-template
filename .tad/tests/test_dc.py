@@ -10,8 +10,11 @@ import traceback
 
 import duckdb
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DC = os.path.join(ROOT, ".tad", "tools", "dc.py")
+# Portable whether this file lives at <repo>/tests/test_dc.py (this repo, standalone) or at
+# <consumer>/.tad/tests/test_dc.py (vendored into a consumer via `git subtree`): ENGINE_ROOT is
+# just "the directory that contains both tools/ and tests/", wherever that happens to be.
+ENGINE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DC = os.path.join(ENGINE_ROOT, "tools", "dc.py")
 
 
 def make_project():
