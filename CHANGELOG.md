@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/creation-guidelines/text-as-data-template/compare/v1.1.1...v1.1.2) (2026-09-22)
+
+
+### Bug Fixes
+
+* **ci:** always pass -m to git subrepo, drop commitlint exemption ([48ebe4e](https://github.com/creation-guidelines/text-as-data-template/commit/48ebe4e99206156ae5169a1780f503886b46281f))
+* **ci:** always pass -m to git subrepo, drop the ignores exemption ([e06a0c3](https://github.com/creation-guidelines/text-as-data-template/commit/e06a0c37315ddf09bde394e1f51fa0f9d4c971c2))
+
 ## [1.1.1](https://github.com/creation-guidelines/text-as-data-template/compare/v1.1.0...v1.1.1) (2026-09-22)
 
 
