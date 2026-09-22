@@ -1,0 +1,3 @@
+{"id":"example-fix-typo","title":"EXAMPLE: fix a typo in the intro","status":"open","note":"Found while reviewing the first draft.","opened":"2026-09-22"}
+{"id":"example-add-diagram","title":"EXAMPLE: add a diagram to concepts.md","status":"in-progress","note":null,"opened":"2026-09-22"}
+{"id":"example-license","title":"EXAMPLE: choose a license","status":"done","note":"Resolved by adding LICENSE.md.","opened":"2026-09-22"}
