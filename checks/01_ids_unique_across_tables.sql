@@ -4,4 +4,5 @@
 SELECT id, count(*) AS n FROM (
   SELECT id FROM concepts
   UNION ALL SELECT id FROM backlog
+  UNION ALL SELECT id FROM session_log
 ) GROUP BY id HAVING count(*) > 1;
