@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.0](https://github.com/creation-guidelines/text-as-data-template/compare/v1.1.2...v1.2.0) (2026-09-22)
+
+
+### Features
+
+* **data:** add a backlog table as a standing example ([c6f5179](https://github.com/creation-guidelines/text-as-data-template/commit/c6f51794854b4ed2a2d992f25106108109cb531e))
+* **data:** add a backlog table as a standing example ([5744f98](https://github.com/creation-guidelines/text-as-data-template/commit/5744f985f43b81c70ec0834130a2d8e9834e74ea))
+* **data:** add session_log, and tad-engine's real backlog ([38fcf4c](https://github.com/creation-guidelines/text-as-data-template/commit/38fcf4c91d3f39016464343ecd72fa9c4562f734))
+* **data:** add session_log, and tad-engine's real backlog ([575ebfb](https://github.com/creation-guidelines/text-as-data-template/commit/575ebfb6a69dfa0ab584cabe6343c7c9369f07d5))
+
 ## [1.1.2](https://github.com/creation-guidelines/text-as-data-template/compare/v1.1.1...v1.1.2) (2026-09-22)
 
 
