@@ -11,9 +11,9 @@ make test     # tests for .tad/ itself
 make verify   # exactly what CI runs
 ```
 
-If `.tad/` is a plain folder rather than a git subtree (check with `git log --oneline -- .tad | grep -i squash` -
-if that finds nothing, it's plain), this repo was likely just generated from the template and
-needs `./bin/adopt-engine.sh` run once, before any other commit touches `.tad/`. See
+If `.tad/` is a plain folder rather than a git subrepo (check for `.tad/.gitrepo` - if it's
+missing, it's plain), this repo was likely just generated from the template and needs
+`./bin/adopt-engine.sh` run once, before any other commit touches `.tad/`. See
 [`.tad/README.md`](.tad/README.md) for what that does and how to pull engine updates afterward.
 
 ## Layout
