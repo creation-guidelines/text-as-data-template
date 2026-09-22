@@ -5,10 +5,14 @@
 <a id="example-source"></a>
 ### EXAMPLE: a source
 
-**Url:** https://example.com/
+Url
+: https://example.com/
 
-**Author:** Example Author
+Author
+: Example Author
 
-**Year:** 2024
+Year
+: 2024
 
-**Cited by:** [EXAMPLE: one](concepts.md#example-one)
+Cited by
+: [EXAMPLE: one](concepts.md#example-one)
