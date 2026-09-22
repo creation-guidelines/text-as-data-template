@@ -97,10 +97,10 @@ Opened
 ### Propagate the RFC-like style to other repos
 
 Status
-: open
+: done
 
 Note
-: software-engineering-canon and git-rhizoid.github.io still render with their own older presentation (software-engineering-canon has its own local render.py with bold labels; git-rhizoid.github.io pulled the engine before this change). Each needs its own git subrepo pull plus, for software-engineering-canon, the same bold-to-definition-list edit applied to its local render.py by hand.
+: Both repos confirmed live: git-rhizoid.github.io pulled the engine cleanly via git subrepo (stock renderer, no conflicts). software-engineering-canon needed the same edit hand-ported to its own local render.py (8 spots) since that file is deliberately not vendored - the pull alone updated only its unused copy of the generic renderer. Both now serve the definition-list style live.
 
 Opened
 : 2026-09-22
