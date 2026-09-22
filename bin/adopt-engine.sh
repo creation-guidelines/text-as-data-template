@@ -30,6 +30,6 @@ fi
 
 git rm -rq .tad
 git commit -q -m "chore(tad): remove vendored copy before adopting as a git subrepo"
-git subrepo clone "$ENGINE_REPO" .tad -b "$ENGINE_REF"
+git subrepo clone "$ENGINE_REPO" .tad -b "$ENGINE_REF" -m "chore(tad): vendor engine via git subrepo"
 echo "Done. .tad/ is now a git subrepo tracking $ENGINE_REPO ($ENGINE_REF)."
 echo "To pull future engine updates: git subrepo pull .tad"
