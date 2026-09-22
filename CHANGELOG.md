@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/creation-guidelines/text-as-data-template/compare/v1.2.0...v1.3.0) (2026-09-22)
+
+
+### Features
+
+* **docs:** RFC-like minimal Pages style ([4df017b](https://github.com/creation-guidelines/text-as-data-template/commit/4df017ba4bc76c428c795f4939f43ae2dfb7e461))
+
 ## [1.2.0](https://github.com/creation-guidelines/text-as-data-template/compare/v1.1.2...v1.2.0) (2026-09-22)
 
 
