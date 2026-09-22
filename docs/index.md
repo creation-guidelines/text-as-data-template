@@ -2,6 +2,7 @@
 
 # Index
 
-- [Backlog](backlog.md): 3
+- [Backlog](backlog.md): 7
 - [Concepts](concepts.md): 3
+- [Session Log](session_log.md): 6
 - [Sources](sources.md): 1
