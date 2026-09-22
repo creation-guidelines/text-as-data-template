@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/creation-guidelines/text-as-data-template/compare/v1.1.0...v1.1.1) (2026-09-22)
+
+
+### Bug Fixes
+
+* **ci:** ignore git subtree's auto-generated commit messages in commitlint ([6c35ad1](https://github.com/creation-guidelines/text-as-data-template/commit/6c35ad13be329a2c8271a7f1c24f95cec7a50609))
+
 ## [1.1.0](https://github.com/creation-guidelines/text-as-data-template/compare/v1.0.0...v1.1.0) (2026-09-21)
 
 
