@@ -1,2 +1,7 @@
--- EXAMPLE: replace `concepts` with the tables that share an id namespace in your schema.
-SELECT id, count(*) AS n FROM concepts GROUP BY id HAVING count(*) > 1;
+-- EXAMPLE: every table with an 'id' column shares one namespace, because render.py's cross-link
+-- index is global (any id links to whatever row first defines it) - not just tables that feel
+-- topically related. Add a table here whenever you add one with an 'id' column.
+SELECT id, count(*) AS n FROM (
+  SELECT id FROM concepts
+  UNION ALL SELECT id FROM backlog
+) GROUP BY id HAVING count(*) > 1;

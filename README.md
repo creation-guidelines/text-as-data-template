@@ -9,7 +9,10 @@ gives you a fresh, historyless copy of `.tad/`, not a `git`-connected one, so th
 what makes `git subrepo pull` (see [`.tad/README.md`](.tad/README.md)) work from then on; it needs
 [`git-subrepo`](https://github.com/ingydotnet/git-subrepo) installed, which the script checks for.
 The example content in `data/` and `checks/` is a placeholder - replace it with your own schema and
-delete the `EXAMPLE:` rows.
+delete the `EXAMPLE:` rows. The example includes a `backlog` table (status: open /
+in-progress / done, optionally linked to a concept via `relations`) - every project built this way
+should keep one; it renders to its own page ([`docs/backlog.md`](docs/backlog.md) here) the same as
+any other content, no separate tracker needed.
 
 - **Read the example site:** published to GitHub Pages once you enable it (Settings -> Pages -> Deploy from a branch -> `main` / `/docs`).
 - **Working on it (humans or agents):** read [`AGENTS.md`](AGENTS.md), run `make setup`, then `make verify`.
