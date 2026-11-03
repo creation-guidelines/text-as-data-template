@@ -23,17 +23,24 @@ missing, it's plain), this repo was likely just generated from the template and 
 | `data/load.sql` | `COPY` statements | DuckDB only |
 | `data/<table>.json` | one JSON object per line (JSONL despite the extension) | DuckDB only |
 | `checks/*.sql` | invariants: each query must return **no rows** | you |
-| `docs/*.md` | rendered pages, published to GitHub Pages | `make render` only |
+| `docs/*.md` (or `docs/*.rst`) | rendered pages, in the format `DOCS_FORMAT` names (published to GitHub Pages when Markdown) | `make render` only |
 | `.tad/` | the reusable engine (generic, schema-agnostic) | rarely - see `.tad/README.md` |
 
 ## Rules
-1. **Never hand-edit `data/*.json` or `docs/*.md`.** Change data through SQL: `make sql Q="UPDATE ...; SELECT ..."`. Then `make render`.
+1. **Never hand-edit `data/*.json` or anything in `docs/`.** Change data through SQL: `make sql Q="UPDATE ...; SELECT ..."`. Then `make render`.
 2. **Always finish with `make canon`** (`make sql` does this automatically). DuckDB must write the final bytes, or CI fails on a non-canonical diff. A plain `mlr` pass rewrites every line with different whitespace.
 3. **No BLOB columns.** They corrupt on the first JSON round trip. Use base64 `VARCHAR`.
 4. **Do not change DuckDB session settings** such as `preserve_insertion_order`; row order is what keeps diffs at one line per changed row.
 5. **No foreign keys.** They block nearly every `ALTER TABLE` on the referenced table. Put referential integrity in `checks/*.sql` instead.
 6. **Commits follow Conventional Commits** and are linted on the PR; see [`CONTRIBUTING.md`](CONTRIBUTING.md) for the type/scope convention this repo uses and why it matters (it drives the automated release and changelog).
 7. **New or changed factual claims need a source**, if your schema has a sources-like table (columns `title`, `url`) - see `.tad/tools/render.py`'s docstring for the exact convention it detects.
+
+## Output format
+Pages are written as Markdown by default. `DOCS_FORMAT=rst make render` writes reStructuredText instead, and
+`DOCS_FORMAT=md,rst` writes both. Set it once for the repository by changing the `?=` default in the `Makefile`
+(`export DOCS_FORMAT ?= rst`), and delete the pages of the format you stopped using: CI checks that the pages in
+`docs/` are exactly what the data renders to. The data is written once, in Markdown inline syntax (`code`,
+`[text](url)`, `**bold**`, `*emphasis*`); the engine converts and escapes it for reStructuredText.
 
 ## Recipes
 Add or change content:
