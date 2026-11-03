@@ -17,6 +17,8 @@ Considered
 Rejected
 : Doltgres/Dolt hide data history behind a non-file-visible git ref, unreadable in a PR. gitsheets has no SQL or joins. GlueSQL reinvents a SQL engine with no ALTER TABLE support, more machinery than the job needed.
 
+---
+
 
 <a id="extract-template-from-working-repo"></a>
 ### Extracted a template from a working repo, not designed one first
@@ -32,6 +34,8 @@ Considered
 
 Rejected
 : An abstraction is only right once it has met a real case - designing the template first risked encoding assumptions that would not survive contact with real content.
+
+---
 
 
 <a id="switch-subtree-to-subrepo"></a>
@@ -49,6 +53,8 @@ Considered
 Rejected
 : subrepo writes one commit per sync instead of subtree's two, and tracks the pinned commit explicitly in .gitrepo instead of a squash-commit trailer subtree buries in commit history.
 
+---
+
 
 <a id="decline-to-fork-git-subrepo"></a>
 ### Declined to fork git-subrepo for custom commit messages
@@ -64,6 +70,8 @@ Considered
 
 Rejected
 : Unnecessary: the flag already existed. Forking would mean taking on indefinite maintenance of a bash-script fork for a feature that shipped already.
+
+---
 
 
 <a id="tag-dist-for-pinning"></a>
@@ -81,6 +89,8 @@ Considered
 Rejected
 : That tag's tree contains tad-engine's own governance files (commitlint config, CHANGELOG.md), exactly the clutter dist exists to avoid; a same-named tag on dist would also collide with it (git's tag namespace is repo-wide) - found by actually running a release, not by review, and fixed by namespacing as dist/vX.Y.Z.
 
+---
+
 
 <a id="backlog-as-a-table"></a>
 ### Adopted a backlog table as a standing convention
@@ -96,6 +106,8 @@ Considered
 
 Rejected
 : Either breaks the property the rest of the system relies on: everything queryable, versioned, and diffable in the same place, not split across tools.
+
+---
 
 
 <a id="rfc-like-minimal-style"></a>
