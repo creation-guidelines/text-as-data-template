@@ -35,6 +35,10 @@ from [creation-guidelines/tad-engine](https://github.com/creation-guidelines/tad
 file for how to pull engine updates, and fix or extend the engine itself over there, not here
 (a local edit to `.tad/` is what turns the next pull into a merge conflict).
 
+## Output format
+Pages render as Markdown by default; `DOCS_FORMAT=rst make render` renders reStructuredText, and `DOCS_FORMAT=md,rst`
+both. The data is written once. See [`AGENTS.md`](AGENTS.md) and [`.tad/README.md`](.tad/README.md).
+
 ## Releases
 Commits follow [Conventional Commits](https://www.conventionalcommits.org/) and are linted on
 every PR. [release-please](https://github.com/googleapis/release-please) reads them on `main` and
