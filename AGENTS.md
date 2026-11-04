@@ -32,6 +32,7 @@ missing, it's plain), this repo was likely just generated from the template and 
 3. **No BLOB columns.** They corrupt on the first JSON round trip. Use base64 `VARCHAR`.
 4. **Do not change DuckDB session settings** such as `preserve_insertion_order`; row order is what keeps diffs at one line per changed row.
 5. **No foreign keys.** They block nearly every `ALTER TABLE` on the referenced table. Put referential integrity in `checks/*.sql` instead.
+   Do not bump DuckDB (or any dependency of `.tad/`) in a repository generated from this template: the engine pins it and tests against the pin, and a hand edit of `.tad/` turns the next `git subrepo pull` into a conflict. Bump it in `tad-engine` and pull.
 6. **Commits follow Conventional Commits** and are linted on the PR; see [`CONTRIBUTING.md`](CONTRIBUTING.md) for the type/scope convention this repo uses and why it matters (it drives the automated release and changelog).
 7. **New or changed factual claims need a source**, if your schema has a sources-like table (columns `title`, `url`) - see `.tad/tools/render.py`'s docstring for the exact convention it detects.
 
