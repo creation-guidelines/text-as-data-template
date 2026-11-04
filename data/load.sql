@@ -1,3 +1,4 @@
+COPY about FROM 'data/about.json' (FORMAT 'json');
 COPY backlog FROM 'data/backlog.json' (FORMAT 'json');
 COPY concepts FROM 'data/concepts.json' (FORMAT 'json');
 COPY concept_sources FROM 'data/concept_sources.json' (FORMAT 'json');

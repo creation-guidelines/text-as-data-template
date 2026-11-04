@@ -22,6 +22,7 @@ missing, it's plain), this repo was likely just generated from the template and 
 | `data/schema.sql` | DDL, one `CREATE` per table | you, by SQL `ALTER` or by hand (see below) |
 | `data/load.sql` | `COPY` statements | DuckDB only |
 | `data/<table>.json` | one JSON object per line (JSONL despite the extension) | DuckDB only |
+| `about` table | the index page's heading and introduction (`title`, `summary`); one row, and not a page of its own | you, by SQL |
 | `checks/*.sql` | invariants: each query must return **no rows** | you |
 | `docs/*.md` (or `docs/*.rst`) | rendered pages, in the format `DOCS_FORMAT` names (published to GitHub Pages when Markdown) | `make render` only |
 | `.tad/` | the reusable engine (generic, schema-agnostic) | rarely - see `.tad/README.md` |
