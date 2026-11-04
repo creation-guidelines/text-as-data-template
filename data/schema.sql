@@ -1,3 +1,4 @@
+CREATE TABLE about(title VARCHAR NOT NULL, summary VARCHAR NOT NULL);;
 CREATE TABLE backlog(id VARCHAR PRIMARY KEY, title VARCHAR NOT NULL, status VARCHAR NOT NULL, note VARCHAR, opened DATE NOT NULL, CHECK(regexp_matches(id, '^[a-z0-9]+(-[a-z0-9]+)*$')), CHECK((status IN ('open', 'in-progress', 'done'))));;
 CREATE TABLE concepts(id VARCHAR PRIMARY KEY, "name" VARCHAR NOT NULL, "statement" VARCHAR NOT NULL, tags VARCHAR[] DEFAULT(main.list_value()) NOT NULL, CHECK(regexp_matches(id, '^[a-z0-9]+(-[a-z0-9]+)*$')));;
 CREATE TABLE concept_sources(concept_id VARCHAR, source_id VARCHAR, PRIMARY KEY(concept_id, source_id));;
