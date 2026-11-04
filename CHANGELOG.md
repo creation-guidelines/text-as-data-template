@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0](https://github.com/creation-guidelines/text-as-data-template/compare/v1.2.0...v1.3.0) (2026-11-04)
+
+
+### Features
+
+* **data:** the index's heading and introduction are data, in an about table ([#21](https://github.com/creation-guidelines/text-as-data-template/issues/21)) ([6c31d84](https://github.com/creation-guidelines/text-as-data-template/commit/6c31d8425cf32058b9a8f60a54a8534fea350c59))
+* **docs:** RFC-like minimal Pages style ([4df017b](https://github.com/creation-guidelines/text-as-data-template/commit/4df017ba4bc76c428c795f4939f43ae2dfb7e461))
+* **render:** choose the output format with DOCS_FORMAT (md, rst or both) ([#19](https://github.com/creation-guidelines/text-as-data-template/issues/19)) ([99d9541](https://github.com/creation-guidelines/text-as-data-template/commit/99d9541cbdf230cc2d782d2ef7eec24d312045e3))
+
+
+### Bug Fixes
+
+* **ci:** dependabot leaves the vendored engine alone ([#20](https://github.com/creation-guidelines/text-as-data-template/issues/20)) ([6abc3f1](https://github.com/creation-guidelines/text-as-data-template/commit/6abc3f1dda3e2dea027a0e469e8c0174c6337626))
+
 ## [1.2.0](https://github.com/creation-guidelines/text-as-data-template/compare/v1.1.2...v1.2.0) (2026-09-22)
 
 
